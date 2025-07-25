@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the games and projects created by CESPL">
+  <title>Our Games | CESPL</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 4px solid #00c3ff;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo span.copyright {
+      font-size: 2.2rem;
+      border: 2px solid #00c3ff;
+      border-radius: 50%;
+      padding: 0.3rem 0.6rem;
+      color: #00c3ff;
+    }
+    .navbar {
+      margin-top: 20px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .nav-link {
+      color: #f4f4f4;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+    .nav-link:hover, .nav-link.active {
+      background-color: #00c3ff;
+      color: #121212;
+      border-color: #00c3ff;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #00c3ff;
+      margin-bottom: 20px;
+    }
+    .games {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 calc(33.333% - 40px);
+      min-width: 250px;
+    }
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #00c3ff;
+    }
+    .status {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-top: 10px;
+    }
+    .status.released {
+      background-color: #28a745;
+      color: white;
+    }
+    .status.development {
+      background-color: #ffc107;
+      color: #212529;
+    }
+    .status.collaboration {
+      background-color: #6f42c1;
+      color: white;
+    }
+    footer {
+      background: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-top: 4px solid #00c3ff;
+      color: #999;
+    }
+    @media (max-width: 768px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="copyright">C</span>
+      <span>CESPL</span>
+    </div>
+    
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="games.html" class="nav-link active">Games</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Games We Helped Create</h2>
+    <div class="games">
+      <div class="card">
+        <h3>Mine-imator</h3>
+        <p>A powerful Minecraft animation software that allows users to create stunning animations using Minecraft models and worlds.</p>
+        <span class="status collaboration">Collaboration</span>
+      </div>
+      <div class="card">
+        <h3>MCreator</h3>
+        <p>The ultimate Minecraft mod creation tool, enabling users to build custom mods without extensive programming knowledge.</p>
+        <span class="status collaboration">Collaboration</span>
+      </div>
+      <div class="card">
+        <h3>World at War Z</h3>
+        <p>An intense zombie survival game featuring large-scale battles and strategic gameplay elements.</p>
+        <span class="status development">In Development</span>
+      </div>
+      <div class="card">
+        <h3>War Grounds 0</h3>
+        <p>A tactical military strategy game with realistic combat mechanics and immersive battlefield environments.</p>
+        <span class="status released">Released</span>
+      </div>
+      <div class="card">
+        <h3>Battle of Gods</h3>
+        <p>An epic fantasy RPG where players command divine powers in battles between mythological deities.</p>
+        <span class="status development">In Development</span>
+      </div>
+      <div class="card">
+        <h3>Mojang Projects</h3>
+        <p>Various collaborative projects and contributions to the Minecraft ecosystem and related gaming initiatives.</p>
+        <span class="status collaboration">Ongoing</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; CESPL. All rights reserved.</p>
+  </footer>
+</body>
+</html>
