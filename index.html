@@ -65,6 +65,29 @@
       font-size: 1.5rem;
       margin-bottom: 10px;
     }
+    .navbar {
+      margin-top: 20px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .nav-link {
+      color: #f4f4f4;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+    .nav-link:hover, .nav-link.active {
+      background-color: #00c3ff;
+      color: #121212;
+      border-color: #00c3ff;
+    }
     footer {
       background: #1e1e1e;
       padding: 20px;
@@ -87,30 +110,37 @@
     </div>
     <p></p>
     <p><strong>CEO:</strong> Arthur Ward</p>
+    
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="games.html" class="nav-link">Games</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="section">
-    <h2>Our Team</h2>
+    <h2>Welcome to CESPL</h2>
+    <p style="font-size: 1.2rem; margin-bottom: 30px; text-align: center;">
+      Creative Entertainment Software Production Limited - Pioneers in Game Development and Software Innovation
+    </p>
+    
     <div class="team">
-      <div class="card"><h3>Jonethen</h3><p></p></div>
-      <div class="card"><h3>Nora</h3><p></p></div>
-      <div class="card"><h3>Vernessa</h3><p></p></div>
-      <div class="card"><h3>Zach</h3><p></p></div>
-      <div class="card"><h3>Jack</h3><p></p></div>
-      <div class="card"><h3>Aiden (adawg2021)</h3><p></p></div>
-      <div class="card"><h3>Jbw13</h3><p>(Name Undisclosed)</p></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Games We Helped Create</h2>
-    <div class="games">
-      <div class="card"><h3>Mine-imator</h3><p></p></div>
-      <div class="card"><h3>MCreator</h3><p></p></div>
-      <div class="card"><h3>World at War Z</h3><p></p></div>
-      <div class="card"><h3>War Grounds 0</h3><p></p></div>
-      <div class="card"><h3>Battle of Gods</h3><p></p></div>
-      <div class="card"><h3>More Projects</h3><p>Various titles under Mojang affiliation</p></div>
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>To create innovative gaming experiences and cutting-edge software solutions that entertain and inspire players worldwide.</p>
+      </div>
+      <div class="card">
+        <h3>Our Expertise</h3>
+        <p>From indie game development to enterprise software solutions, we bring creativity and technical excellence to every project.</p>
+      </div>
+      <div class="card">
+        <h3>Join Our Journey</h3>
+        <p>Discover our talented team, explore our game portfolio, and learn more about what makes CESPL unique in the industry.</p>
+      </div>
     </div>
   </section>
 
